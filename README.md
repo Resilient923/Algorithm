@@ -5,3 +5,6 @@
 # Baekjoon (https://www.acmicpc.net/)
 
 여기서 풀어봅니다
+
+# 알고리즘 정리
+https://resilient-923.tistory.com/
