@@ -1,0 +1,18 @@
+import sys
+n,m= map(int,sys.stdin.readline().split())
+trees = list(map(int,sys.stdin.readline().split()))
+start =0
+end = max(trees)
+conj = 0
+trees.sort()
+while(start<=end): #이분탐색문제 대부분 이런식으로 구하려는 X에 관하여 변수 mid를 만들어
+    mid = (start+end)//2
+    for i in trees:
+        if i > mid:
+            conj += i-mid
+    if(conj<m):
+         end = mid -1
+    elif(conj>=m):
+        result = mid
+        start = mid+1
+print(result)
