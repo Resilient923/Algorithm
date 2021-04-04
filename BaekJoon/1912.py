@@ -1,4 +1,4 @@
-틀린코드 #이코드는 음수를 고려하지못한다.
+""" 틀린코드 #이코드는 음수를 고려하지못한다.
 
 n = int(input()) 
 m = []
@@ -32,4 +32,4 @@ dp = [0 for _ in range(n)]
 dp[0] = m[0]
 for i in range(1,n):
     dp[i] = max(m[i],dp[i-1]+m[i])
-print(max(dp))
+print(max(dp)) """

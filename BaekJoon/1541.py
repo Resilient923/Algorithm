@@ -10,3 +10,4 @@ for i in data[1:]:
         ans -= int(j)
 print(ans)
 print(data)
+ 
