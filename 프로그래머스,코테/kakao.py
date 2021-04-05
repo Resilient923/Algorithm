@@ -102,6 +102,5 @@ for i in range(rows):
     for j in range(cols):
         if j>0:
             result += costCols[j-1]
-    if i == finalR and j == finalC:
+  #  if i == finalR and j == finalC:
    
-

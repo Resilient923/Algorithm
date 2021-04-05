@@ -24,14 +24,14 @@ n = int(input())
 graph = []
 for i in range(n):
     graph.append(list(map(int, input().split())))
-cnt = 0
+
 num = 0
 island = [[] for _ in range(100000)]
 minLength = 10000
 for i in range(n):
     for j in range(n):
         if graph[i][j] == 1:
-            num +=1 
+            num += 1 
             dfs(i,j)
 
 

@@ -35,4 +35,4 @@ else:
             elif 1<=j<=8:
                 dp[i][j] = dp[i-1][j+1] + dp[i-1][j-1]
 
-    print(sum(dp[n])%1000000000)
+    print(sum(dp[n])%1000000007)
