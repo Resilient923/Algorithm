@@ -40,3 +40,16 @@ else:
 print("Total =",total) """
 #########################################################
 
+n = int(input())
+
+def process(n) :
+    a = 0
+    for i in range(2, n):
+        if n%i == 0:
+            a = a+1
+    return a
+if process(n) == 0:
+    print(n,"is a prime number")
+else :
+    print(n,"is not a prime number")
+
