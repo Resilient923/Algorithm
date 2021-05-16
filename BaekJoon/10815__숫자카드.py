@@ -1,5 +1,6 @@
 #처음작성한 코드 시간초과
 import sys
+input = sys.stdin.readline
 n = int(sys.stdin.readline())
 n_data=(list(map(int,sys.stdin.readline().split())))
 m = int(sys.stdin.readline())
@@ -11,10 +12,10 @@ for i in range(len(m_data)):
             dp[i]=1
 print(dp)
 #두번째코드
-n = int(sys.stdin.readline())
+n = int(input())
 n_data=set(map(int,input().split()))
 m = int(sys.stdin.readline())
-m_data=(list(map(int,sys.stdin.readline().split())))
+m_data=(list(map(int,input().split())))
 for i in m_data:
     if i in n_data:
         print(1, end=' ')
