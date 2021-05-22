@@ -40,7 +40,7 @@ else:
 print("Total =",total) """
 #########################################################
 
-n = int(input())
+""" n = int(input())
 
 def process(n) :
     a = 0
@@ -51,5 +51,11 @@ def process(n) :
 if process(n) == 0:
     print(n,"is a prime number")
 else :
-    print(n,"is not a prime number")
+    print(n,"is not a prime number") """
+n = 4
+data = [[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4]]
+for i in range(n):
+    for j in range(n):
+        print(data[i][j],end=' ')
+    print("hello")
 
