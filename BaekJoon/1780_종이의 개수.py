@@ -14,6 +14,7 @@ def function(x,y,length):
         for j in range(y,y+length):
             #다른 수의 종이조각이 나왔을때
             if graph[x][y] != graph[i][j]:
+                #9등분하기
                 for a in range(3):
                     for b in range(3):
                         function(x+length//3*a,y+length//3*b,length//3)
