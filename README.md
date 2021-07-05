@@ -3,8 +3,7 @@
 https://resilient-923.tistory.com/
 
 
-![image](https://user-images.githubusercontent.com/64014651/118085233-052f0f00-b3fd-11eb-8f2a-d5fe2e61ca97.png)
-
+![image](https://user-images.githubusercontent.com/64014651/124420309-40651300-dd9a-11eb-8699-5001cbcb1744.png)
 
 
 
