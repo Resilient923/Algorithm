@@ -13,15 +13,15 @@ s,x,y = map(int,input().split())
 # 상,하,좌,우 번호가 낮은 종류의 바이러스부터 증식.
 dx = [1,-1,0,0]
 dy = [0,0,1,-1]
-virus = []
-for i in range(n):
-    for j in range(n):
-        if graph[i][j] != 0:
-            virus.append((graph[i][j],0,i,j))
-virus.sort(key=lambda x: x[0])
-q = deque(virus)
 
 def bfs():
+    virus = []
+    for i in range(n):
+        for j in range(n):
+            if graph[i][j] != 0:
+                virus.append((graph[i][j],0,i,j))
+    virus.sort(key=lambda x: x[0])
+    q = deque(virus)
     while q:
         num,time,x,y = q.popleft()
         if time == s:
