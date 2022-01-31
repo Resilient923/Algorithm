@@ -2,18 +2,19 @@ import sys
 input = sys.stdin.readline
 
 n,k = map(int,input().split())
-w = [0 for _ in range(n+1)]
-v = [0 for _ in range(n+1)]
-dp = [[0 for _ in range(k+1)] for _ in range(n+1)]
-for i in range(n):
-    a,b = map(int,input().split())
-    w[i] = a
-    v[i] = b
 
+weight = [0 for _ in range(n+1)]
+value = [0 for _ in range(n+1)]
+
+dp = [[0] * (k+1) for _ in range(n+1)]
+
+for i in range(n):
+    weight[i],value[i] = map(int,input().split())
+ 
 for i in range(n+1):
     for j in range(k+1):
-        if j < w[i]:
+        if j < weight[i]:
             dp[i][j] = dp[i-1][j]
         else:
-            dp[i][j] = max(dp[i-1][j],dp[i-1][j-w[i]]+v[i])
+            dp[i][j] = max(dp[i-1][j],dp[i-1][j-weight[i]]+value[i])
 print(dp[n][k])
