@@ -2,26 +2,15 @@ import sys
 input = sys.stdin.readline
 from collections import deque
 
-#way = 1:오른쪽   2:아래    3:왼쪽    4:위쪽
+#way 는 동,서,남,북
+d = [[0,1],[1,0],[0,-1],[-1,0]]
+
 def direction(way):
+    tmp = d.index(cur_way)
     if way == 'L':
-        if cur_way == [1,0]:
-            return [0,1]
-        elif cur_way == [0,1]:
-            return [-1,0]
-        elif cur_way == [-1,0]:
-            return [0,-1]
-        elif cur_way == [0,-1]:
-            return [1,0]
+        return d[(tmp + 3) % 4]
     elif way == 'D':
-        if cur_way == [1,0]:
-            return [0,-1]
-        elif cur_way == [0,-1]:
-            return [-1,0]
-        elif cur_way == [-1,0]:
-            return [0,1]
-        elif cur_way == [0,1]:
-            return [1,0]
+        return d[(tmp + 1) % 4]
 
 def if_snake_body(x,y):
     if (x,y) in snake:
